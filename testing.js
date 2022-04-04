@@ -5,5 +5,5 @@ function helloWorld(){
 
     console.log('Testing');
 
-    return (b);
+    return (b,a);
 }
