@@ -1,4 +1,4 @@
-// Demonstrating a fork and a merge
+// Demonstrating that I can work on my own branch for CP-15
 function helloWorld(){
     var a = 123;
     var b = 'abc';
