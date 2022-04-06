@@ -30,6 +30,10 @@ var testOne = function(a){
 
     This also allows a TON of stuff to be done within
     the object.  This is HIGHLY useful.
+
+    We also need to discuss metadata and I'll provide
+    an example of that within this object at a later
+    date.
 */
 var myObj = {
     a: 'What is this',
@@ -37,7 +41,7 @@ var myObj = {
     c: function(a){
         console.log(a);
     },
-    d: function(x){                 // Passing in the number of times to loop: x times
+    loop: function(x){              // Passing in the number of times to loop: x times
         for(i=0;i<=x;i++){          // Example of a for loop
             if(i<x){
                 console.log(i);
@@ -46,5 +50,15 @@ var myObj = {
             }
         }
         return this;                // Example of chaining
+    },
+    clear: function(){
+        console.clear();
+
+        return this;                // Example of chaining
+    },
+    error: function(msg){
+        console.error(msg);
+
+        return this;
     }
 }
