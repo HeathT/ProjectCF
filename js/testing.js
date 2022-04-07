@@ -1,29 +1,3 @@
-// This is an old-school stand-alone function
-function helloWorld(){
-    var a = 123;
-    var b = 'abc';
-    var c = 'xyz';
-
-    console.log('Testing');         // Logging output to console
-    console.warn('Hello World');    // Warning output to console (typically red or yellow and denoted by a hazard icon)
-    console.info(b);                // Information output to console using the local variable 'b'
-
-    return a,b,c;
-}
-
-
-/*  
-    This is a clearly defined function that is cast into a variable
-    which allows us to do a bit more with it down the road.
-
-    We can also send a value to it (mapped to local variable 'a')
-    which can be used within the function 
-*/
-global.testOne = function(a){
-    console.log(a);
-}
-
-
 /*
     This is an example of a javascript object.
     We'll discuss this in much greater detail later.
