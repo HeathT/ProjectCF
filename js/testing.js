@@ -19,7 +19,7 @@ function helloWorld(){
     We can also send a value to it (mapped to local variable 'a')
     which can be used within the function 
 */
-var testOne = function(a){
+global.testOne = function(a){
     console.log(a);
 }
 
@@ -35,7 +35,7 @@ var testOne = function(a){
     an example of that within this object at a later
     date.
 */
-var myObj = {
+global.myObj = {
     a: 'What is this',
     b: 'It is an object',
     c: function(a){
@@ -60,5 +60,47 @@ var myObj = {
         console.error(msg);
 
         return this;
+    }
+}
+
+global.textChange = {
+    move: function(cls, pos){
+
+        return this;
+    },
+    color: function(cls, clr) {
+        if(clr == '' || clr === undefined){          // randomly change the color (clr) if it's not passed into the function
+            clr = this.colorList[this.getRandomInt(Object.keys(this.colorList).length)];
+        }
+
+        document.getElementsByClassName(cls)[0].style.color = clr;
+
+        return this;
+    },
+    weight: function(cls, wt){
+
+        return this;
+    },
+    colorList: {
+        0: '#FF0000',
+        1: '#00FF00',
+        2: '#0000FF',
+        3: '#ECECEC',
+        4: '#C0C0C0',
+        5: '#3060F0',
+        6: '#33FF99'
+    },
+    previousColor: 4,
+    getRandomInt: function(max) {
+        for(i=Math.floor(Math.random()*max); i == this.previousColor; i++){
+            if(i>(Object.keys(this.colorList).length-1)){
+                i = 0;
+            }
+        };
+        this.previousColor = i;
+        return i;
+    },
+    changeIt: function(){
+        setInterval(() => {this.color('centerText')}, 2000);    // Example of an arrow function
     }
 }
