@@ -38,6 +38,12 @@
     padding-top: 15px;
 }
 
+.listHeader {
+    background-color: #000000;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
 .purchasedItem {
     color: #C0C0C0;
     text-decoration: line-through;
