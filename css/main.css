@@ -46,6 +46,10 @@
     margin-bottom: 10px;
 }
 
+.purchasedList .listHeader{
+    background-color: #C0C0C0 !important;
+}
+
 .purchasedItem {
     color: #C0C0C0;
     text-decoration: line-through;
