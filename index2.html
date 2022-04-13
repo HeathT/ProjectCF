@@ -13,26 +13,26 @@
     <body onload="global.textChange.changeIt()">
         <div class="centerText">Developing 101</div>
         <div class="centerContent">
-            <div class="currentList">
+            <div class="currentList" ondrop="global.dd.drop(event)" ondragover="global.dd.allowDrop(event)">
                 <div class="listHeader">Shopping List</div>
-                <div>Corn</div>
-                <div>Peas</div>
-                <div>Tomatoes</div>
-                <div>Cucumbers</div>
-                <div>Lettuce</div>
-                <div>Hamburger</div>
-                <div>Porkloin</div>
-                <div>Bratwurst</div>
-                <div>Frozen Pizza</div>
+                <div draggable="true" ondragstart="global.dd.drag(event)" id="div1">Corn</div>
+                <div draggable="true" ondragstart="global.dd.drag(event)" id="div2">Peas</div>
+                <div draggable="true" ondragstart="global.dd.drag(event)" id="div3">Tomatoes</div>
+                <div draggable="true" ondragstart="global.dd.drag(event)" id="div4">Cucumbers</div>
+                <div draggable="true" ondragstart="global.dd.drag(event)" id="div5">Lettuce</div>
+                <div draggable="true" ondragstart="global.dd.drag(event)" id="div6">Hamburger</div>
+                <div draggable="true" ondragstart="global.dd.drag(event)" id="div7">Porkloin</div>
+                <div draggable="true" ondragstart="global.dd.drag(event)" id="div8">Bratwurst</div>
+                <div draggable="true" ondragstart="global.dd.drag(event)" id="div9">Frozen Pizza</div>
             </div>
-            <div class="purchasedList">
-                <div class="listHeader">Purchased</div>
-                <div class="purchasedItem">Green Beans</div>
-                <div class="purchasedItem">Brocolli</div>
-                <div class="purchasedItem">Carrots</div>
-                <div class="purchasedItem">Sirloin</div>
-                <div class="purchasedItem">Hot Pockets</div>
-                <div class="purchasedItem">Using Font Tag</div>
+            <div class="purchasedList" ondrop="global.dd.drop(event)" ondragover="global.dd.allowDrop(event)">
+                <div draggable="true" ondragstart="global.dd.drag(event)" id="div10" class="listHeader">Purchased</div>
+                <div draggable="true" ondragstart="global.dd.drag(event)" id="div11" class="purchasedItem">Green Beans</div>
+                <div draggable="true" ondragstart="global.dd.drag(event)" id="div12" class="purchasedItem">Brocolli</div>
+                <div draggable="true" ondragstart="global.dd.drag(event)" id="div13" class="purchasedItem">Carrots</div>
+                <div draggable="true" ondragstart="global.dd.drag(event)" id="div14" class="purchasedItem">Sirloin</div>
+                <div draggable="true" ondragstart="global.dd.drag(event)" id="div15" class="purchasedItem">Hot Pockets</div>
+                <div draggable="true" ondragstart="global.dd.drag(event)" dropzone="false" id="div16" class="purchasedItem">Using Font Tag</div>
             </div>
         </div>
     </body>
